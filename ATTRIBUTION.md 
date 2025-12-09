@@ -1,0 +1,21 @@
+This document details the sources of data, code, frameworks, and tools used in this project.
+
+### 1. Data Sources
+
+* **Keypoint Data:** The core data for this project is derived from skeleton keypoint data, often generated using tools 
+like MediaPipe, applied to videos based on the **WLASL (Word-level Deep Sign Language Recognition from Video)** dataset.
+Some of the url links in WLASL are not accessable, so I also take some downloaded videos from Kaggle-WLASL Complete
+    * *Reference WLASL:* [https://github.com/dxli94/WLASL]
+    * *Reference Kaggle:* [https://www.kaggle.com/datasets/utsavk02/wlasl-complete]
+
+### 2. Model and Code Sources
+
+* **TGCN Model:** The Temporal Graph Convolutional Network (TGCN) architecture (`tgcn_model.py`) is based on established Spatio-Temporal Graph Convolutional networks adapted for sign language. The fine-tuning process utilizes a pre-trained checkpoint.
+    * *Reference (TGCN/ASL Pre-trained Model):* [https://github.com/dxli94/WLASL?tab=readme-ov-file]
+* **Frameworks:**
+    * PyTorch (TGCN implementation)
+    * TensorFlow/Keras (1D CNN implementation)
+    * NumPy, scikit-learn, Matplotlib, Seaborn (Data handling and visualization)
+
+### 3. AI Generation Statement
+Debugging assistance and code structure refinement were generated and refined using the **Gemini** (Google) and **ChatGPt** (OpenAI)
